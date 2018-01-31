@@ -31,7 +31,7 @@ void Timer:: resetTimer()
     executionTime = 0;
 }
 
-void Timer:: displayInformation();
+void Timer:: displayInformation()
 {
     cout << "The execution time is: " << executionTime << endl;
     cout << "In human it is " << double (executionTime)/CLOCKS_PER_SEC << " seconds" <<  endl;
