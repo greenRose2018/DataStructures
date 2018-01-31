@@ -8,6 +8,7 @@
 
 #include "Controller.hpp"
 
+using namespace std;
 Controller:: Controller()
 {
     
@@ -15,7 +16,9 @@ Controller:: Controller()
 
 void Controller:: start()
 {
-    
+    cout << "Testing the Timer class" << endl;
+    Timer codeTimer;
+    codeTimer.stopTimer();
 }
 
 
