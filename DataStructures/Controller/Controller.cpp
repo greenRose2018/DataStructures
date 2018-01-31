@@ -18,6 +18,17 @@ Controller:: Controller()
 void Controller:: start()
 {
     //testTimer();
+    cout << "Testing the Timer class" << endl;
+    Timer codeTimer;
+    codeTimer.startTimer();
+    vector<CrimeData> myData = FileController:: readCrimeDataToVector("/Users/bmor9741/Documents/Data Structures/DataStructures/DataStructures/Data/crimes.csv");
+    for(int loop = 200; loop < 216; loop++)
+    {
+        cout << "Spot# "<< loop << "; " << myData[loop] << endl;
+    }
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
+    
 }
 
 void Controller:: testTimer()
