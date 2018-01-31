@@ -36,8 +36,8 @@
 		B6496ACA20220EEB00B7AA30 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		B6E65F9520221EC5001240FD /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
-		B6E65F9620221EC5001240FD /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		B6E65F9720221EC5001240FD /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		B6E65F9A20222A1B001240FD /* crimes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crimes.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		B61D178E20221A9D00983678 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B6E65F9620221EC5001240FD /* crime.csv */,
+				B6E65F9A20222A1B001240FD /* crimes.csv */,
 				B6E65F9720221EC5001240FD /* CrimeData.cpp */,
 				B6E65F9520221EC5001240FD /* CrimeData.hpp */,
 			);
