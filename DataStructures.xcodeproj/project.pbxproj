@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC520220BE200B7AA30 /* Controller.cpp */; };
 		B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC820220BEE00B7AA30 /* Runner.cpp */; };
+		B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496ACA20220EEB00B7AA30 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B6496AC520220BE200B7AA30 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		B6496AC620220BE200B7AA30 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		B6496AC820220BEE00B7AA30 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		B6496ACA20220EEB00B7AA30 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +74,18 @@
 				B6496AC520220BE200B7AA30 /* Controller.cpp */,
 				B6496AC620220BE200B7AA30 /* Controller.hpp */,
 				B6496AC820220BEE00B7AA30 /* Runner.cpp */,
+				B6496ACD20220EF200B7AA30 /* Tools */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6496ACD20220EF200B7AA30 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B6496ACA20220EEB00B7AA30 /* Timer.cpp */,
+				B6496ACB20220EEB00B7AA30 /* Timer.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */,
 				B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */,
 				B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */,
 			);

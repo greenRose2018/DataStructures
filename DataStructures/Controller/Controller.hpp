@@ -17,7 +17,6 @@ class Controller
 public:
     Controller();
     void start();
-    
-}
+};
 
 #endif /* Controller_hpp */
