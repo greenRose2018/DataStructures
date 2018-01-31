@@ -7,3 +7,15 @@
 //
 
 #include "Controller.hpp"
+
+Controller:: Controller()
+{
+    
+}
+
+void Controller:: start()
+{
+    
+}
+
+
