@@ -11,6 +11,7 @@
 		B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC520220BE200B7AA30 /* Controller.cpp */; };
 		B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC820220BEE00B7AA30 /* Runner.cpp */; };
 		B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496ACA20220EEB00B7AA30 /* Timer.cpp */; };
+		B6E65F9820221EC5001240FD /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6E65F9720221EC5001240FD /* CrimeData.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,9 @@
 		B6496AC820220BEE00B7AA30 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		B6496ACA20220EEB00B7AA30 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		B6E65F9520221EC5001240FD /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		B6E65F9620221EC5001240FD /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		B6E65F9720221EC5001240FD /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,9 @@
 		B61D178E20221A9D00983678 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B6E65F9620221EC5001240FD /* crime.csv */,
+				B6E65F9720221EC5001240FD /* CrimeData.cpp */,
+				B6E65F9520221EC5001240FD /* CrimeData.hpp */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */,
+				B6E65F9820221EC5001240FD /* CrimeData.cpp in Sources */,
 				B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */,
 				B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */,
 				B61D178D202219EA00983678 /* FileController.cpp in Sources */,
