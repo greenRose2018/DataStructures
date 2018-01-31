@@ -17,6 +17,11 @@ Controller:: Controller()
 
 void Controller:: start()
 {
+    //testTimer();
+}
+
+void Controller:: testTimer()
+{
     cout << "Testing the Timer class" << endl;
     Timer codeTimer;
     codeTimer.startTimer();
@@ -26,7 +31,7 @@ void Controller:: start()
     
     codeTimer.resetTimer();
     codeTimer.startTimer();
-    for (int index = 0; index < 100; index++)
+    for (int index = 0; index < 1; index++)
     {
         cout << "The index is " << index << "\t";
     }

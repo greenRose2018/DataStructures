@@ -19,6 +19,7 @@ class Controller
 public:
     Controller();
     void start();
+    void testTimer();
 };
 
 #endif /* Controller_hpp */
