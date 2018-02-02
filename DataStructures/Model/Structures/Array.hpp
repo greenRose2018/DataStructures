@@ -39,6 +39,6 @@ public:
     //Methods
     int getSize() const;
     Type getFromIndex(int index);
-    void setAtIndex(int indexx, Type data);
+    void setAtIndex(int index, Type data);
 };
 #endif /* Array_hpp */
