@@ -36,4 +36,9 @@ public:
     Type& operator[] (int index);
     Type operator[] (int index) const;
     
+    //Methods
+    int getSize() const;
+    Type getFromIndex(int index);
+    void setAtIndex(int indexx, Type data);
+};
 #endif /* Array_hpp */
