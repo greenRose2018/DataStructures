@@ -25,4 +25,10 @@ public:
     //Constructor
     Array<Type>(int size);
     
+    //Copy constructor
+    Array<Type>(const Array<Type> & toCopy);
+    
+    //Destructor
+    ~Array<Type>();
+    
 #endif /* Array_hpp */
