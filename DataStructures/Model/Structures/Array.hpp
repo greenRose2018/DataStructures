@@ -31,4 +31,9 @@ public:
     //Destructor
     ~Array<Type>();
     
+    //Operators
+    Array<Type> & operator = (const Array<Type> & toReplace);
+    Type& operator[] (int index);
+    Type operator[] (int index) const;
+    
 #endif /* Array_hpp */
