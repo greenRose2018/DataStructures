@@ -71,4 +71,24 @@ Array<Type> :: ~Array()
     delete [] internalArray;
 }
 
+template <class Type>
+Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
+{
+    if(&toAssign != this)
+    {
+        
+        if (size != toAssign.getSize())
+        {
+            delete[] internalArray;
+            size = toAssign.getSize();
+            internalArray = new Type [size];
+        }
+        
+        for(int i = 0; i < size; i++)
+        {
+            internalArray[i] = toAssign[i];
+        }
+    }
+    return *this;
+}
 #endif /* Array_hpp */
