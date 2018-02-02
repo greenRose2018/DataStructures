@@ -9,7 +9,20 @@
 #ifndef Array_hpp
 #define Array_hpp
 
-#include <iostream>
+#include <assert.h>     //Used for validating user supplied data.
+#include <iostream>     //Used for tracing and debug statements.
 
+using namespace std;
 
+template <class Type>
+class Array
+{
+private:
+    Type * internalArray;
+    int size;
+    
+public:
+    //Constructor
+    Array<Type>(int size);
+    
 #endif /* Array_hpp */
