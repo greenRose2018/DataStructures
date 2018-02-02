@@ -18,17 +18,17 @@ Controller:: Controller()
 void Controller:: start()
 {
     //testTimer();
-    cout << "Testing the Timer class" << endl;
-    Timer codeTimer;
-    codeTimer.startTimer();
-    vector<CrimeData> myData = FileController:: readCrimeDataToVector("/Users/bmor9741/Documents/Data Structures/DataStructures/DataStructures/Data/crimes.csv");
-    for(int loop = 200; loop < 216; loop++)
-    {
-        cout << "Spot# "<< loop << "; " << myData[loop] << endl;
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    
+//    cout << "Testing the Timer class" << endl;
+//    Timer codeTimer;
+//    codeTimer.startTimer();
+//    vector<CrimeData> myData = FileController:: readCrimeDataToVector("/Users/bmor9741/Documents/Data Structures/DataStructures/DataStructures/Data/crimes.csv");
+//    for(int loop = 200; loop < 216; loop++)
+//    {
+//        cout << "Spot# "<< loop << "; " << myData[loop] << endl;
+//    }
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+    findMaxAndMin();
 }
 
 void Controller:: testTimer()
@@ -50,5 +50,31 @@ void Controller:: testTimer()
     codeTimer.stopTimer();
     codeTimer.displayInformation();
 }
-
+void Controller:: findMaxAndMin()
+{
+    Timer searchTimer;
+    searchTimer.startTimer();
+    vector<CrimeData> myData = FileController:: readCrimeDataToVector("/Users/bmor9741/Documents/Data Structures/DataStructures/DataStructures/Data/crimes.csv");
+    
+    int minIndex = 0;
+    int maxIndex = 0;
+    
+    for(int i = 1; i < myData.size(); i++)
+    {
+        if(myData[minIndex] > myData[i])
+        {
+            minIndex = i;
+        }
+        
+        else if (myData [maxIndex] < myData[i])
+        {
+            maxIndex = i;
+        }
+    }
+    searchTimer.stopTimer();
+    cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
+    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
+    
+    searchTimer.displayInformation();
+}
 
