@@ -10,6 +10,17 @@
 
 void ArrayTester :: testArrayBuild()
 {
+    Array<int> firstArray(10);
+    
+    for(int i = 0; i < 10; i++)
+    {
+        firstArray.setAtIndex(i,i);
+    }
+    
+    for(int j = 0; j < firstArray.getSize(); j++)
+    {
+        cout << firstArray[j] << endl;
+    }
 }
 
 void ArrayTester:: testAdvancedArray()
