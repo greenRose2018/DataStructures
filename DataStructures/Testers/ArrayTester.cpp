@@ -46,5 +46,5 @@ void ArrayTester :: testArrayBuild()
 
 void ArrayTester:: testAdvancedArray()
 {
-    
+    //look above I tested all the methods inside testArrayBuild()
 }
