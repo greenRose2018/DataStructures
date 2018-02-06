@@ -38,6 +38,7 @@
 		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		B6848578202A0034009A0020 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		B6848579202A0034009A0020 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		B6848596202A1134009A0020 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		B6E65F9520221EC5001240FD /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		B6E65F9720221EC5001240FD /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		B6E65F9A20222A1B001240FD /* crimes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crimes.csv; sourceTree = "<group>"; };
@@ -123,9 +124,18 @@
 			path = Testers;
 			sourceTree = "<group>";
 		};
+		B6848594202A1113009A0020 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				B6848596202A1134009A0020 /* Node.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		B6F40DFB2024BF95008C853B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B6848594202A1113009A0020 /* Nodes */,
 				B6F40DFC2024BFA0008C853B /* Structures */,
 			);
 			path = Model;
