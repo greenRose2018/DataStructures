@@ -43,9 +43,9 @@ public:
 };
 
 template <class Type>
-Array<Type :: Array(int size)
+Array<Type> :: Array(int size)
 {
-    asser(size > 0 );
+    assert(size > 0 );
     this->size = size;
     
     internalArray = new Type[size];
@@ -92,14 +92,14 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     return *this;
 }
 
-template <class Type>
-Type & Array<ype> :: operator[] (int index)
+template <class Type> // Left hand of = sign -- assigns to reference
+Type & Array<Type> :: operator[] (int index)
 {
-    assert(index >+ 0 && index < size);
+    assert(index >= 0 && index < size);
     return internalArray[index];
 }
 
-template <class Type>
+template <class Type> // right hand of = sign -- copy
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
@@ -125,7 +125,7 @@ Type Array<Type> :: getFromIndex(int index)
 template <class Type>
 void Array<Type> :: setAtIndex(int pos, Type item)
 {
-    assert(pos >= 0 & pos < size);
+    assert(pos >= 0 && pos < size);
     internalArray[pos] = item;
 }
 
