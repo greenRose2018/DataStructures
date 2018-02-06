@@ -28,6 +28,9 @@ void Controller:: start()
 //    }
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
+    ArrayTester  myTest;
+    myTest.testArrayBuild();
+    myTest.testAdvancedArray();
     findMaxAndMin();
 }
 
