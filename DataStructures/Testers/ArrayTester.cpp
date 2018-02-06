@@ -7,3 +7,12 @@
 //
 
 #include "ArrayTester.hpp"
+
+void ArrayTester :: testArrayBuild()
+{
+}
+
+void ArrayTester:: testAdvancedArray()
+{
+    
+}
