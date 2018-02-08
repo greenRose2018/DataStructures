@@ -10,11 +10,13 @@
 #define LinearNode_hpp
 
 #include <iostream>
+#include "Node.hpp"
 
 template <class Type>
-class LinearNode {
+class LinearNode : public Node<Type>
+{
 private:
-    //next LinearNode<Type>*;
+    LinearNode<Type> * next;
     
 public:
     LinearNode();
