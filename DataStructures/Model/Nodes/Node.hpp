@@ -24,7 +24,7 @@ public:
 };
 
 template < class Type>
-Node<Type :: Node()
+Node<Type>:: Node()
 {
     //Needed for default constructor complication
     //Since when we create a structure it does not have an item to store yet.
@@ -37,7 +37,7 @@ Node<Type> :: Node(Type data)
 }
 
 template <class Type>
-void NOde<Type> :: setData(Type data)
+void Node<Type> :: setData(Type data)
 {
     this->data = data;
 }
