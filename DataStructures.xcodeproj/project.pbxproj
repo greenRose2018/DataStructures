@@ -13,6 +13,7 @@
 		B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496ACA20220EEB00B7AA30 /* Timer.cpp */; };
 		B684857A202A0034009A0020 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6848578202A0034009A0020 /* ArrayTester.cpp */; };
 		B6E65F9820221EC5001240FD /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6E65F9720221EC5001240FD /* CrimeData.cpp */; };
+		B6EDD009203499D500A63AB1 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EDD007203499D500A63AB1 /* LinkedListTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,8 @@
 		B6E65F9720221EC5001240FD /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		B6E65F9A20222A1B001240FD /* crimes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crimes.csv; sourceTree = "<group>"; };
 		B6EDD0052034848600A63AB1 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		B6EDD007203499D500A63AB1 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		B6EDD008203499D500A63AB1 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		B6F40DFF2024BFE6008C853B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +126,8 @@
 			children = (
 				B6848578202A0034009A0020 /* ArrayTester.cpp */,
 				B6848579202A0034009A0020 /* ArrayTester.hpp */,
+				B6EDD007203499D500A63AB1 /* LinkedListTester.cpp */,
+				B6EDD008203499D500A63AB1 /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				B6E65F9820221EC5001240FD /* CrimeData.cpp in Sources */,
 				B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */,
 				B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */,
+				B6EDD009203499D500A63AB1 /* LinkedListTester.cpp in Sources */,
 				B684857A202A0034009A0020 /* ArrayTester.cpp in Sources */,
 				B61D178D202219EA00983678 /* FileController.cpp in Sources */,
 			);

@@ -34,8 +34,8 @@ public:
     void addAtIndex(int index, Type item);
     Type getFromIndex(int index);
     Type remove(int index);
-    //Type setAtIndex(int index, Type item);
-    //bool contains(Type item);
+//    Type setAtIndex(int index, Type item);
+//    bool contains(Type item);
     
 };
 
