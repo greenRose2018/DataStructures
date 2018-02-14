@@ -14,20 +14,20 @@
 #include "../Nodes/LinearNode.hpp"
 
 template <class Type>
-class List<Type>
+class List
 {
 protected:
     int size;
 public:
     //Structures
     virtual void add(Type item) = 0;
-    virtual void addAtIndex(int index, Type item) =0l
-    virtual Type remove(Type item) = 0;
+    virtual void addAtIndex(int index, Type item) =0;
+    virtual Type remove(int item) = 0;
     virtual Type getFromIndex(int index) = 0;
     //Helper
     virtual int getSize() const =0;
     virtual LinearNode<Type> * getFront() = 0;
-    virtual LinerNode<Type> * getEnd() =0;
+    virtual LinearNode<Type> * getEnd() =0;
 };
 
 #endif /* List_hpp */

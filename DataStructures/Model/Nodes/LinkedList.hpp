@@ -9,7 +9,7 @@
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-#inclued "../Structures/List.hpp"
+#include "../Structures/List.hpp"
 using namespace std;
 
 template <class Type>
@@ -68,7 +68,7 @@ void LinkedList<Type> :: add(Type item)
     }
     else
     {
-        this->end->setNextNOde(newData);
+        this->end->setNextNode(newData);
     }
     
     this->end = newData;
@@ -87,7 +87,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
         if(index == 0)
         {
-            toBeAdde0>setNextNode(front);
+            toBeAdded->setNextNode(front);
             front = toBeAdded;
         }
         else
@@ -106,7 +106,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 template<class Type>
-Type LinkeList<Type> :: remove(int index)
+Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index <this->size);
     
@@ -143,12 +143,12 @@ Type LinkeList<Type> :: remove(int index)
     }
     this->size -= 1;
     
-    removedData = tobeRemoved->getData();
+    removedData = toBeRemoved->getData();
     delete toBeRemoved;
     return removedData;
 }
 template<class Type>
-LinearNode<Type> * LinkedList<Type> :: getEnd90
+LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
@@ -158,7 +158,7 @@ LinearNode<Type> * LinkedList<Type> :: getFront()
     return this->front;
 }
 template<class Type>
-int LinearNode<Type> :: getSize() const
+int LinkedList<Type> :: getSize() const
 {
     return this->size;
 }

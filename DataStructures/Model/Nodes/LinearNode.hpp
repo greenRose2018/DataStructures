@@ -24,7 +24,7 @@ public:
     LinearNode(Type data, LinearNode<Type> * next);
     
     void setNextNode(LinearNode<Type> *);
-    LinearNode<Type> getNextNode();
+    LinearNode<Type> * getNextNode();
 };
 //Constructors
 /**

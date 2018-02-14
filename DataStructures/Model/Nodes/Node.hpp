@@ -16,6 +16,7 @@ class Node
 {
 protected:
     Type data;
+    
 public:
     Node();
     Node(Type data);
