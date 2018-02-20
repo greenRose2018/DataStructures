@@ -28,10 +28,15 @@ void Controller:: start()
 //    }
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
-    ArrayTester  myTest;
-    myTest.testArrayBuild();
-    myTest.testAdvancedArray();
-    findMaxAndMin();
+    
+//    ArrayTester  myTest;
+//    myTest.testArrayBuild();
+//    myTest.testAdvancedArray();
+//    findMaxAndMin();
+    LinkedListTester myTest;
+    
+    myTest.testListBasics();
+    myTest.testListWithData();
 }
 
 void Controller:: testTimer()
