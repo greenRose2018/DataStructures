@@ -40,6 +40,7 @@
 		B6496ACA20220EEB00B7AA30 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 		B65724BC20445EBD00DCF7FD /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleNode.hpp; path = Linear/DoubleNode.hpp; sourceTree = "<group>"; };
+		B65724BF2044632300DCF7FD /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		B6848578202A0034009A0020 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		B6848579202A0034009A0020 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		B6848596202A1134009A0020 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 		B6F40DFC2024BFA0008C853B /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				B65724BF2044632300DCF7FD /* CircularList.hpp */,
 				B65724BA20445E6900DCF7FD /* NonLinear */,
 				B65724B920445E5A00DCF7FD /* Linear */,
 				B6F40DFF2024BFE6008C853B /* Array.hpp */,
