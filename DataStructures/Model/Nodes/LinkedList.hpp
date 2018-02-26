@@ -9,7 +9,7 @@
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 
-#include "../Structures/List.hpp"
+#include "../Structures/Linear/List.hpp"
 using namespace std;
 
 template <class Type>

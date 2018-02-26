@@ -131,6 +131,12 @@ void CircularList<Type> :: addAtIndex(int index, Type item)
     this->size++;
 }
 
+template<class Type>
+int CircularList<Type> :: getSize() const
+{
+    return this->size;
+}
+
 template <class Type>
 Type CircularList<Type>  :: getFromIndex(int index)
 {
