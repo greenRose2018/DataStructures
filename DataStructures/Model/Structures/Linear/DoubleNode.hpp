@@ -5,10 +5,6 @@
 //  Created by Morales, Brittney on 2/26/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
-
-#ifndef CircularList_hpp
-#define CircularList_hpp
-
 #include <stdio.h>
 #include "Node.hpp"
 
@@ -85,4 +81,4 @@ DoubleNode<Type> * DoubleNode<Type> :: getPrevious()
 {
     return previous;
 }
-#endif /* CircularList_hpp */
+#endif /* DoubleNode_hpp */
