@@ -39,6 +39,7 @@
 		B6496AC820220BEE00B7AA30 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		B6496ACA20220EEB00B7AA30 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		B6496ACB20220EEB00B7AA30 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		B65724BC20445EBD00DCF7FD /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Linear/CircularList.hpp; sourceTree = "<group>"; };
 		B6848578202A0034009A0020 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		B6848579202A0034009A0020 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		B6848596202A1134009A0020 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -121,6 +122,20 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		B65724B920445E5A00DCF7FD /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		B65724BA20445E6900DCF7FD /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NonLinear;
+			sourceTree = "<group>";
+		};
 		B6848577202A0011009A0020 /* Testers */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +169,11 @@
 		B6F40DFC2024BFA0008C853B /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				B65724BA20445E6900DCF7FD /* NonLinear */,
+				B65724B920445E5A00DCF7FD /* Linear */,
 				B6F40DFF2024BFE6008C853B /* Array.hpp */,
 				B63F44E7202CB2F600873578 /* List.hpp */,
+				B65724BC20445EBD00DCF7FD /* CircularList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
