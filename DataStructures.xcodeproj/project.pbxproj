@@ -44,6 +44,8 @@
 		B6848578202A0034009A0020 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		B6848579202A0034009A0020 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		B6848596202A1134009A0020 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		B6D484B82045ABD200AA51B7 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		B6D484BB2045ABDE00AA51B7 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		B6E65F9520221EC5001240FD /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		B6E65F9720221EC5001240FD /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		B6E65F9A20222A1B001240FD /* crimes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crimes.csv; sourceTree = "<group>"; };
@@ -126,9 +128,12 @@
 		B65724B920445E5A00DCF7FD /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				B6EDD0052034848600A63AB1 /* LinkedList.hpp */,
 				B6F40DFF2024BFE6008C853B /* Array.hpp */,
 				B63F44E7202CB2F600873578 /* List.hpp */,
 				B65724BF2044632300DCF7FD /* CircularList.hpp */,
+				B6D484B82045ABD200AA51B7 /* Queue.hpp */,
+				B6D484BB2045ABDE00AA51B7 /* Stack.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -157,7 +162,6 @@
 				B65724BC20445EBD00DCF7FD /* DoubleNode.hpp */,
 				B6848596202A1134009A0020 /* Node.hpp */,
 				B63F44EA202CB4C000873578 /* LinearNode.hpp */,
-				B6EDD0052034848600A63AB1 /* LinkedList.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
