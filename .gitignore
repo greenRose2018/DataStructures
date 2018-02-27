@@ -3,6 +3,8 @@
 /bin
 .DS_Store
 *.class
+*.xcuserstate
+
 # Compiled Object files
 *.slo
 *.lo
