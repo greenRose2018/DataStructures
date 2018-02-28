@@ -30,6 +30,10 @@ public:
     Type remove(int index);
     Type getFromIndex(int index);
     int getSize() const;
+    
+    //unused
+    LinearNode<Type> * getFront();
+    LinearNode<Type> * getEnd();
 };
 
 template<class Type>
@@ -172,4 +176,14 @@ Type CircularList<Type> :: remove(int index)
     delete removed;
     return value;
 }
+
+//Extraneous Bad Design
+template <class Type>
+LinearNode<Type> * CircularList<Type> :: getFront()
+{
+    return nullptr;
+}
+template <class Type>
+LinearNode<Type> * CircularList<Type> :: getEnd()
+
 #endif /* CircularList_hpp */
