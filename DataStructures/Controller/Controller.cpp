@@ -40,7 +40,7 @@ void Controller:: start()
 //    myTest.testListWithData();
     
     RecursionTester test;
-    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller:: testTimer()
