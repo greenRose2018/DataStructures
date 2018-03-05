@@ -33,10 +33,14 @@ void Controller:: start()
 //    myTest.testArrayBuild();
 //    myTest.testAdvancedArray();
 //    findMaxAndMin();
-    LinkedListTester myTest;
     
-    myTest.testListBasics();
-    myTest.testListWithData();
+//    LinkedListTester myTest;
+//
+//    myTest.testListBasics();
+//    myTest.testListWithData();
+    
+    RecursionTester test;
+    test.testRecursionNumbers();
 }
 
 void Controller:: testTimer()
