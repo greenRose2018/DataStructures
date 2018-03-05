@@ -23,7 +23,7 @@ void TestingStacksAndQueues :: stackVersusList()
     cout << "Get the third from the last item from the structure" << endl;
     int index = 0;
     int value = -99;
-    stackTimer.startTimer()
+    stackTimer.startTimer();
     
     while(index<9)
     {
@@ -31,7 +31,7 @@ void TestingStacksAndQueues :: stackVersusList()
         index++;
     }
     
-    stackTimer.stopTimer()
+    stackTimer.stopTimer();
     index = 0;
     listTimer.startTimer();
     value = numberList.getFromIndex(7);
