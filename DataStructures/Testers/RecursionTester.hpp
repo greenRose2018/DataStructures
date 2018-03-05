@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <string>
-#include "../controller/Tools/Timer.hpp"
+#include "../Controller/Tools/Timer.hpp"
 using namespace std;
 
 class RecursionTester

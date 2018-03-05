@@ -85,7 +85,7 @@ Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
     
-    Type retrned = this->front->getData();
+    Type returned = this->front->getData();
     
     LinearNode<Type> * removed = this->front;
     this->Front = removed->getNextNode();
