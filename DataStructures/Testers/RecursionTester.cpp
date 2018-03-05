@@ -21,3 +21,18 @@ int RecursionTester:: fib(int number)
         return fib (number - 1) + fib (number - 2);
     }
 }
+
+string RecursionTester:: mystery(string word)
+{
+    return "";
+    
+}
+
+void RecursionTester:: testRecursionNumbers()
+{
+}
+
+void RecursionTester:: testRecursionString()
+{
+    
+}
