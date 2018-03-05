@@ -9,7 +9,7 @@
 #ifndef Stack_hpp
 #define Stack_hpp
 
-#include <LinkedList.hpp>
+#include "LinkedList.hpp"
 
 template <class Type>
 class Stack : public LinkedList<Type>
