@@ -24,8 +24,26 @@ int RecursionTester:: fib(int number)
 
 string RecursionTester:: mystery(string word)
 {
-    return "";
-    
+    if(word.length() == 1)
+    {
+        return word;
+    }
+    else
+    {
+        return word + mystery(word.substr(0, word.length() - 1));
+    }
+}
+
+string RecursionTester:: myMystery(string word)
+{
+    if(word.length() == 1)
+    {
+        return word;
+    }
+    else
+    {
+        return word + myMystery(word.substr(word.length(), word.length() - 1));
+    }
 }
 
 void RecursionTester:: testRecursionNumbers()
@@ -42,5 +60,10 @@ void RecursionTester:: testRecursionNumbers()
 
 void RecursionTester:: testRecursionString()
 {
+    mystery("Brittney");
+    mystery("dog");
+    
+    myMystery("hello");
+    myMystery("good day");
     
 }
