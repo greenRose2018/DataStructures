@@ -29,7 +29,7 @@ public:
     
     //Overridden LinkedList methods
     void add(Type data);
-    void addAtIndex(int inde, Type data);
+    void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
 };
@@ -88,7 +88,7 @@ Type Queue<Type> :: dequeue()
     Type returned = this->front->getData();
     
     LinearNode<Type> * removed = this->front;
-    this->Front = removed->getNextNode();
+    this->front = removed->getNextNode();
     
     delete removed;
     
