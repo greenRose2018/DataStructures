@@ -7,3 +7,17 @@
 //
 
 #include "RecursionTester.hpp"
+
+int RecursionTester:: fib(int number)
+{
+    if(number == 0 || number == 1)
+    {
+        cout << "reached a base case" << endl;
+        return 1;
+    }
+    else
+    {
+        cout << "calling fib with: " << number - 1 <<  " and " << number - 2 << endl;
+        return fib (number - 1) + fib (number - 2);
+    }
+}
