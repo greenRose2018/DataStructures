@@ -36,13 +36,15 @@ string RecursionTester:: mystery(string word)
 
 string RecursionTester:: myMystery(string word)
 {
+    
+    
     if(word.length() == 1)
     {
         return word;
     }
     else
     {
-        return word + myMystery(word.substr(word.length(), word.length() - 1));
+        return word + myMystery(word.substr(0, word.length() - 1));
     }
 }
 
