@@ -73,7 +73,7 @@ void TestingStacksAndQueues:: stackVersusQueue()
     
     for(int i = 0; i < 100; i++)
     {
-        CrimeData temp = data.at(index);
+        CrimeData temp = data.at(i);
         crimeStack.push(temp);
         crimeQueue.enqueue(temp);
     }
