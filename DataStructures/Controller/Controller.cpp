@@ -39,8 +39,11 @@ void Controller:: start()
 //    myTest.testListBasics();
 //    myTest.testListWithData();
     
-    RecursionTester test;
-    test.testRecursionString();
+    //RecursionTester test;
+    //test.testRecursionString();
+    
+    SortingTester my;
+    my.testSorts();
 }
 
 void Controller:: testTimer()
