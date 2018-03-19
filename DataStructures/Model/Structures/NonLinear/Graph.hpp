@@ -49,7 +49,7 @@ public:
     std::set<int> neighbors(int vertex) const;
     
     //Traversals
-    void dephtFristTraversal(Graph<Type> & graph,int vertex);
+    void dephtFirstTraversal(Graph<Type> & graph,int vertex);
     void breadthFirstTraversal(Graph<Type> & graph,int vertex);
     int costTraversal(Graph<Type> & graph,int vertex);
 };
@@ -63,12 +63,20 @@ Graph<Type> :: Graph()
     this->vertexCount = 0;
 }
 
+/*
+ Since we cannot "remove" from an array in C++
+ we only implement adding to a graph.
+ Java allows for all objects to be set to null but C++
+ does not.
+*/
+
 template <class Type>
 int Graph<Type> :: size() const
 {
     return vertexCount;
 }
 
+//Left hand side operator
 template <class Type>
 Type& Graph<Type> :: operator[](int vertex)
 {
@@ -76,6 +84,7 @@ Type& Graph<Type> :: operator[](int vertex)
     return graphData[vertex];
 }
 
+//Right hand side operator
 template <class Type>
 TypeGraph<Type> :: operator[](int vertex)const
 {
