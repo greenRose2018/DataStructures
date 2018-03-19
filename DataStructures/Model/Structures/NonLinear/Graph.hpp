@@ -176,4 +176,20 @@ bool Graph<Type> :: areConnected(int source, int target) const
     return isAnEdge;
 }
 
+template<class Type>
+std::set<int> Graph<Type> :: neighbors(int vertex) const
+{
+    assert(vertex < vertexCount);
+    std::set<int> verteexNeighbors;
+    
+    for(int index = 0; index < vertexCount; index++)
+    {
+        if(adjacencyMatrix[vertex][index])
+        {
+            vertexNeighbors.insert(index);
+        }
+    }
+    return vertexNeighbors;
+}
+
 #endif /* Graph_hpp */
