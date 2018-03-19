@@ -26,26 +26,29 @@ private:
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
 public:
     Graph();
-    
-    
+    //Graph operations
     void addVertex(const Type& value);
     
+    //Connect vertices
     void addEdge(int source, int target);
     void addEdgeUndirected(int source, int target);
     void addEdgeCost(int source, int target, int cost);
-    
+    //Disconnect vertices
     void removeEdge(int source, int target);
     void removeEdgeUndirected(int source, int target);
     void removeEdgeCost(int source, int target,  int cost);
     
+    //Accessor methods
     Type& operator [] (int vertex);
     Type operator [] (int vertex) const;
     int size() const;
     
+    //Check connections
     bool hasUndirectedConnection(int source, int target) const;
     bool areConnected(int source, int target) const;
     std::set<int> neighbors(int vertex) const;
     
+    //Traversals
     void dephtFristTraversal(Graph<Type> & graph,int vertex);
     void breadthFirstTraversal(Graph<Type> & graph,int vertex);
     int costTraversal(Graph<Type> & graph,int vertex);
