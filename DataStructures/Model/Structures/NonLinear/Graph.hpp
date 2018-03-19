@@ -219,4 +219,10 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
     }
 }
 
+template<class Type>
+int Graph<Type> :: costTraversal(Graph<Type> & graph, int vertex)
+{
+    
+}
+
 #endif /* Graph_hpp */
