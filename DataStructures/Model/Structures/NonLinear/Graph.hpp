@@ -192,4 +192,31 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     return vertexNeighbors;
 }
 
+template<class Type>
+void Graph<Type> :: dephtFirstTraversal(Graph<Type> & currentGraph, int vertex)
+{
+    bool visistedVertices[MAXIMUM];
+    assert(vertex< currentGraph.size());
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
+}
+
+template<class Type>
+void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
+{
+    std::set<int connections = currentGraph.neihbos(vertex);
+    std::set<int>::iterator setIterator
+    
+    visted[vertex] =true;
+    cout<< currentGraph[vertex] << "," << endl;
+    
+    for(setIterator=connections.begin(); setIterator != connections.end(); setIterator++)
+    {
+        if(!visited[*setIterator])
+        {
+            depthFirstTraversal(currentGraph,  *setIterator, visited); //Recursion is called
+        }
+    }
+}
+
 #endif /* Graph_hpp */
