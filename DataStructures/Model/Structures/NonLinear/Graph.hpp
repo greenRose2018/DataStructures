@@ -18,7 +18,7 @@ template <class Type>
 class Graph
 {
 private:
-    static const int MAXIMUM = 20;
+    static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int wightostMatrix [MAXIMUM][MAXIMUM];
     Type graphData [MAXIMUM];
@@ -202,15 +202,15 @@ void Graph<Type> :: dephtFirstTraversal(Graph<Type> & currentGraph, int vertex)
 }
 
 template<class Type>
-void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
+void Graph<Type> :: dephtFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
 {
     std::set<int connections = currentGraph.neihbos(vertex);
     std::set<int>::iterator setIterator
     
     visted[vertex] =true;
-    cout<< currentGraph[vertex] << "," << endl;
+    cout << currentGraph[vertex] << "," << endl;
     
-    for(setIterator=connections.begin(); setIterator != connections.end(); setIterator++)
+    for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
     {
         if(!visited[*setIterator])
         {
