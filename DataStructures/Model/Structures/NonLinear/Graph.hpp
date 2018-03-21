@@ -219,6 +219,35 @@ void Graph<Type> :: dephtFirstTraversal(Graph<Type> & currentGraph, int vertex, 
     }
 }
 
+template< class Type>
+void Graph<Type>:: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
+{
+    assert(vertex < currentGraph.size());
+    bool visited[MAXIMUM];
+    set<int> connections;
+    set<int>::iterator setIterator;
+    
+    fill_n(visited, currentGraph.size(), false);
+    visited[vertex] = true;
+    cout << curentGraph[vertex] << endl;
+    vertexQueue.push(vertex);
+    while (!vertexQueue.empth())
+    {
+        connections = currentGraph.neighbors(vertexQueue.front());
+        vertexQueue.pop();
+        
+        for(setIterator = connections.begin(); setIterator != connetions.end(); setIterator++)
+        {
+            if(!visited[*setIterator])
+            {
+                visited[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
+                vertexQueue.push(*setIterator);
+            }
+        }
+    }
+}
+
 template<class Type>
 int Graph<Type> :: costTraversal(Graph<Type> & graph, int vertex)
 {
