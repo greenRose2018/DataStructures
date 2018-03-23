@@ -41,9 +41,13 @@ void Controller:: start()
     
     //RecursionTester test;
     //test.testRecursionString();
+//
+//    SortingTester my;
+//    my.testSorts();
     
-    SortingTester my;
-    my.testSorts();
+    GraphTester test;
+    test.testGraphs();
+
 }
 
 void Controller:: testTimer()
