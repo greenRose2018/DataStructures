@@ -115,6 +115,14 @@ void GraphTester :: setup()
 
 void GraphTester:: compareTraversals()
 {
+    int num = 9;
+    int nums = 12;
+    int third = 33;
+    
+    puzzle.breadthFirstTraversal(puzzle, num);
+    puzzle.breadthFirstTraversal(puzzle, nums);
+    puzzle.breadthFirstTraversal(puzzle, third);
+    
 }
 
 void GraphTester :: findCheapestTraversal()
