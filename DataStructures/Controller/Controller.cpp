@@ -45,9 +45,11 @@ void Controller:: start()
 //    SortingTester my;
 //    my.testSorts();
     
-    GraphTester test;
-    test.testGraphs();
+//    GraphTester test;
+//    test.testGraphs();
 
+    BinaryTreeTester test;
+    test.testNodes();
 }
 
 void Controller:: testTimer()
