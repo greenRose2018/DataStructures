@@ -28,9 +28,9 @@ public:
     BinaryTreeNode<Type> * getLeft();
     BinaryTreeNode<Type> * getRight();
     
-    void setRoot(BinaryTreeNode<Type> * );
-    void setLeft(BinaryTreeNode<Type> * );
-    void setRight(BinaryTreeNode<Type> * );
+    void setRoot(BinaryTreeNode<Type> * root);
+    void setLeft(BinaryTreeNode<Type> * left);
+    void setRight(BinaryTreeNode<Type> * right);
     
 };
 
