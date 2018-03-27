@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B61D178D202219EA00983678 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B61D178B202219EA00983678 /* FileController.cpp */; };
+		B632F660206A93D600656592 /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B632F65E206A93D600656592 /* BinaryTreeTester.cpp */; };
 		B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC520220BE200B7AA30 /* Controller.cpp */; };
 		B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496AC820220BEE00B7AA30 /* Runner.cpp */; };
 		B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6496ACA20220EEB00B7AA30 /* Timer.cpp */; };
@@ -37,6 +38,8 @@
 		B61D178B202219EA00983678 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		B61D178C202219EA00983678 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		B632F65C206A8EF300656592 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		B632F65E206A93D600656592 /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
+		B632F65F206A93D600656592 /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
 		B63F44E7202CB2F600873578 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		B63F44EA202CB4C000873578 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		B6496ABA20220BC500B7AA30 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +183,8 @@
 				B689EA19205AB38D0010AE8B /* SortingTester.hpp */,
 				B6DE207020653AED0042BA6A /* GraphTester.cpp */,
 				B6DE207120653AED0042BA6A /* GraphTester.hpp */,
+				B632F65E206A93D600656592 /* BinaryTreeTester.cpp */,
+				B632F65F206A93D600656592 /* BinaryTreeTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				B65A3AF1204D8FAC00ABC082 /* RecursionTester.cpp in Sources */,
 				B6496ACC20220EEB00B7AA30 /* Timer.cpp in Sources */,
 				B6E65F9820221EC5001240FD /* CrimeData.cpp in Sources */,
+				B632F660206A93D600656592 /* BinaryTreeTester.cpp in Sources */,
 				B6496AC720220BE200B7AA30 /* Controller.cpp in Sources */,
 				B6496AC920220BEE00B7AA30 /* Runner.cpp in Sources */,
 				B6DE207220653AED0042BA6A /* GraphTester.cpp in Sources */,
