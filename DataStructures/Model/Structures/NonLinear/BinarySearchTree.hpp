@@ -64,9 +64,9 @@ BinarySearchTree<Type> :: BinarySearchTree()
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
-    BinarySearchTree<Type> * insertMe = new BinarySearchTree<Type>(itemToInsert);
-    BinarySearchTree<Type> * previous = nullptr;
-    BinarySearchTree<Type> * current = this->root;
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this->root;
     
     if(current == nullptr)
     {
@@ -83,7 +83,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             }
             else if( itemToInsert > current->getData())
             {
-                current = current-> current->getRightNode();
+                current = current->getRightNode();
             }
             else //remove ccerr after verification of understanding
             {
