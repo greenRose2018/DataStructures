@@ -25,6 +25,7 @@ public:
     virtual void insert(Type data) = 0;
     virtual bool contains(Type data) = 0;
     virtual void remove(Type data) = 0;
+    
     //Traversals
     virtual void inOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
