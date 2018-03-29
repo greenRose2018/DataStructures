@@ -55,5 +55,11 @@ public:
     Type findMinimum();
     Type findMaximum();
 };
+template <class Type>
+BinarySearchTree<Type> :: BinarySearchTree()
+{
+    this->root = nullptr;
+}
+
 
 #endif /* BinarySearchTree_hpp */
