@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include "Tree.hpp"
-using namespace std:
+using namespace std;
 
 template <class Type>
 class BinarySearchTree : public Tree<Type>
@@ -104,5 +104,152 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 
 }
 
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
+    inOrderTraversal(this->root);
+}
 
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTree<Type> * inStart)
+{
+    if(inStart != nullptr)
+    {
+        cout<< "going left" << endl;
+        inOrderTraversal(inStart->getLeftNode());
+        cout << "Node Contents: " << inStart->getData() << endl;
+        cout<< "going right" << endl;
+        inOrderTraversal(inStart->getRightNode());
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTree<Type> * preStart)
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinarySearchTree<Type> * postStart)
+{
+    
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateSize(BinarySearchTree<Type> * startNode)
+{
+    return -1;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateHeight(BinarySearchTree<Type> * startNode)
+{
+    return -1;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced(BinarySearchTree<Type> * startNode)
+{
+    return false;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinarySearchTree<Type> * startNode, int index, int size)
+{
+    return false;
+}
+template <class Type>
+void BinarySearchTree<Type> :: removeNode(BinarySearchTree<Type> * removeMe)
+{
+    
+}
+template <class Type>
+BinarySearchTree<Type> * BinarySearchTree<Type> :: getRoot()
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: setRoot(BinarySearchTree<Type> * root)
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal()
+{
+    
+}
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal()
+{
+    
+}
+template <class Type>
+void BinarySearchTree<Type> :: demoTraversalSteps(BinarySearchTree<Type> * node)
+{
+    
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    return false;
+}
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return false;
+}
+template <class Type>
+bool BinarySearchTree<Type> :: contains(Type value)
+{
+    return false;
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: remove(Type value)
+{
+    
+}
+template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    
+}
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return -1;
+}
+
+template <class Type>
+BinarySearchTree<Type> * BinarySearchTree<Type> :: getRightMostChild(BinarySearchTree<Type> * current)
+{
+    
+}
+
+template <class Type>
+BinarySearchTree<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinarySearchTree<Type> * current)
+{
+    
+}
 #endif /* BinarySearchTree_hpp */
