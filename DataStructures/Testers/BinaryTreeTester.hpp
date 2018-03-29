@@ -10,12 +10,17 @@
 #define BinaryTreeTester_hpp
 
 #include "../Model/Nodes/BinaryTreeNode.hpp"
+#include "../Model/Structures/NonLinear/BinarySearchTree.hpp"
 #include <iostream>
-
+using namespace std;
 class BinaryTreeTester
 {
+private:
+    BinarySearchTree<int> testTree;
+    
 public:
     void testNodes();
+    void doTreeStuff();
 };
 
 #endif /* BinaryTreeTester_hpp */
