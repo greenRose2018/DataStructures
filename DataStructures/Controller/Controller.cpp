@@ -47,9 +47,11 @@ void Controller:: start()
     
 //    GraphTester test;
 //    test.testGraphs();
-
+//
     BinaryTreeTester test;
     test.testNodes();
+    test.doTreeStuff();
+
 }
 
 void Controller:: testTimer()
