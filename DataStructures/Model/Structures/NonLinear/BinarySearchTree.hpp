@@ -32,7 +32,28 @@ protected:
     void removeNode(BinarySearchTree<Type> * removeMe);
     
 public:
-    <#member functions#>
+    BinarySearchTree(); // Constructor
+    ~BinarySearchTree(); // Destructor
+    
+    BinarySearchTree<Type> * getRoot();
+    void setRoot(BinarySearchTree<Type> * root);
+    
+    void inOrderTraversal();
+    void preOrderTraversal();
+    void postOrderTraversal();
+    void demoTraversalSteps(BinarySearchTree<Type> * node);
+    
+    int getSize();
+    int getHeight();
+    bool isComplete();
+    bool isBalanced();
+    
+    bool contains(Type value);
+    void insert(Type itemToInsert);
+    void remove(Type value);
+    
+    Type findMinimum();
+    Type findMaximum();
 };
 
 #endif /* BinarySearchTree_hpp */
