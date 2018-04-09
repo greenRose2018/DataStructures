@@ -196,11 +196,32 @@ BinarySearchTree<Type> :: ~BinarySearchTree()
     
 }
 
-
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return isBalanced(this->root);
+}
 
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
 {
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if(startNode == nullptr)
+    {
+        return true;
+    }
+    leftHeight = calculateHeight(startNode->getLeftNode());
+    rightHeight = calculateHeight(startNode->getRightNode());
+    
+    int heightDifference = abs(leftHeight-rightHeight);
+    bool leftBalanced = isBalanced(startNode->getLeftNode());
+    bool rightBalanced = isBalanced(startNode->getRightNode());
+    if( heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
     return false;
 }
 
@@ -238,11 +259,7 @@ bool BinarySearchTree<Type> :: isComplete()
 {
     return false;
 }
-template <class Type>
-bool BinarySearchTree<Type> :: isBalanced()
-{
-    return false;
-}
+
 template <class Type>
 bool BinarySearchTree<Type> :: contains(Type value)
 {
