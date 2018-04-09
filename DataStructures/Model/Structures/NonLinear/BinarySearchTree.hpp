@@ -226,8 +226,27 @@ bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
 }
 
 template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    int index = 0;
+    int size =getSize();
+    
+    return isComplete(this->root, index, size);
+}
+
+template <class Type>
 bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
+    if(startNode == nullptr)
+    {
+        return true;
+    }
+    if(index >= size)
+    {
+        return true;
+    }
+    
+    return (isComplete(startNode->root, 2 * index + 1, size) && isComplete(startNode->root, 2 * index + 2, size));
     return false;
 }
 template <class Type>
@@ -254,11 +273,7 @@ void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
     
 }
 
-template <class Type>
-bool BinarySearchTree<Type> :: isComplete()
-{
-    return false;
-}
+
 
 template <class Type>
 bool BinarySearchTree<Type> :: contains(Type value)
