@@ -157,22 +157,46 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postSta
 }
 
 template <class Type>
-BinarySearchTree<Type> :: ~BinarySearchTree()
+int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
 {
-    
+    if(startNode != nullptr)
+    {
+        return calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode()) + 1;
+    }
+    return 0;
 }
 
 template <class Type>
-int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
+int BinarySearchTree<Type> :: getSize()
 {
-    return -1;
+    int size = 0;
+    size += calculateSize(this->root);
+    return size;
 }
 
 template <class Type>
 int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 {
-    return -1;
+    if(startNode != nullptr)
+    {
+        return max(calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode())) + 1;
+    }
+    return 0;
 }
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return calculateHeight(this->root);
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    
+}
+
+
 
 template <class Type>
 bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
@@ -241,17 +265,6 @@ Type BinarySearchTree<Type> :: findMaximum()
     
 }
 
-template <class Type>
-int BinarySearchTree<Type> :: getSize()
-{
-    return -1;
-}
-
-template <class Type>
-int BinarySearchTree<Type> :: getHeight()
-{
-    return -1;
-}
 
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
