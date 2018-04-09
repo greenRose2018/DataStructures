@@ -49,7 +49,7 @@ void Controller:: start()
 //    test.testGraphs();
 //
     BinaryTreeTester test;
-    test.testNodes();
+    //test.testNodes();
     test.doTreeStuff();
 
 }

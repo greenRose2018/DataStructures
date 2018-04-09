@@ -179,7 +179,7 @@ int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 {
     if(startNode != nullptr)
     {
-        return max(calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode())) + 1;
+        return max(calculateHeight(startNode->getLeftNode()) , calculateSize(startNode->getRightNode())) + 1;
     }
     return 0;
 }
@@ -246,8 +246,7 @@ bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int 
         return true;
     }
     
-    return (isComplete(startNode->root, 2 * index + 1, size) && isComplete(startNode->root, 2 * index + 2, size));
-    return false;
+    return (isComplete(startNode->getLeftNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size));
 }
 template <class Type>
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
