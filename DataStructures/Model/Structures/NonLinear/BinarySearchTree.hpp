@@ -25,6 +25,7 @@ protected:
     void inOrderTraversal(BinaryTreeNode<Type> * inStart);
     void preOrderTraversal(BinaryTreeNode<Type> * preStart);
     void postOrderTraversal(BinaryTreeNode<Type> * postStart);
+    void destroyTree(BinaryTreeNode<Type> * node);
     
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
@@ -188,12 +189,6 @@ template <class Type>
 int BinarySearchTree<Type> :: getHeight()
 {
     return calculateHeight(this->root);
-}
-
-template <class Type>
-BinarySearchTree<Type> :: ~BinarySearchTree()
-{
-    
 }
 
 template <class Type>
@@ -448,20 +443,35 @@ Type BinarySearchTree<Type> :: findMaximum()
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
-    
+    return this->root;
 }
 
 template <class Type>
 void BinarySearchTree<Type> :: setRoot(BinaryTreeNode<Type> * root)
 {
-    
+    this->root = root;
 }
-
 
 template <class Type>
 void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
 {
     
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    destroyTree(this->root);
+}
+template < class Type>
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeftNode());
+        destroyTree(node->getRightNode());
+        delete node;
+    }
 }
 
 #endif /* BinarySearchTree_hpp */
