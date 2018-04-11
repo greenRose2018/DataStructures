@@ -432,6 +432,19 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode
     }
     return currentNode;
 }
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
+}
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    assert(this->root != nullptr);
+    return getRightMostChild(this->root)->getData();
+}
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
@@ -447,17 +460,6 @@ void BinarySearchTree<Type> :: setRoot(BinaryTreeNode<Type> * root)
 
 template <class Type>
 void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
-{
-    
-}
-
-template <class Type>
-Type BinarySearchTree<Type> :: findMinimum()
-{
-    
-}
-template <class Type>
-Type BinarySearchTree<Type> :: findMaximum()
 {
     
 }
