@@ -249,6 +249,30 @@ bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int 
     return (isComplete(startNode->getLeftNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size));
 }
 template <class Type>
+bool BinarySearchTree<Type> :: contains(Type value)
+    if(current == nullptr)
+    {
+        return false;
+    }
+    else
+        while(current != nullptr)
+        {
+            if(value == current->getData())
+            {
+                return true;
+            }
+            else if(value < current->getData())
+            {
+                current = current->getLeftNode();
+            }
+            else
+            {
+                current = current->getRightNode();
+            }
+        }
+        return false;
+    }
+}
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     
@@ -270,14 +294,6 @@ template <class Type>
 void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
 {
     
-}
-
-
-
-template <class Type>
-bool BinarySearchTree<Type> :: contains(Type value)
-{
-    return false;
 }
 
 template <class Type>
