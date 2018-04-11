@@ -273,6 +273,59 @@ bool BinarySearchTree<Type> :: contains(Type value)
         return false;
     }
 }
+template <class Type>
+void BinarySearchTree<Type> :: remove(Type value)
+{
+    if(this->root == nullptr)
+    {
+        cout << "Empy tree so removal is not possible" << endl;
+    }
+    else
+    {
+        BinaryTreeNode<Type> * current = this->root;
+        BinaryTreeNode<Type> * previous = nullptr;
+        bool hasBeenFound = false;
+        
+        while(current != nullptr && !hasBeenFound)
+        {
+            if(current->getData() == value)
+            {
+                hasBeenFound = true;
+            }
+            else
+            {
+                previous = current;
+                if(value < current->getData())
+                {
+                    current = current->getLeftNode();
+                }
+                else
+                {
+                    current = current->getRightNode();
+                }
+            }
+        }
+        if(current == nullptr)
+        {
+            cerr << "Item not found, removal unsuccessful" << endl;
+        }
+        else if(hasBeenFound)
+        {
+            if(current == this->root)
+            {
+                removeNode(this->root);
+            }
+            else if(value < previous->getData())
+            {
+                removeNode(previous->getLeftNode());
+            }
+            else
+            {
+                removeNode(previous->getRightNode());
+            }
+        }
+    }
+}
 void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
     
@@ -296,11 +349,6 @@ void BinarySearchTree<Type> :: demoTraversalSteps(BinaryTreeNode<Type> * node)
     
 }
 
-template <class Type>
-void BinarySearchTree<Type> :: remove(Type value)
-{
-    
-}
 template <class Type>
 Type BinarySearchTree<Type> :: findMinimum()
 {
