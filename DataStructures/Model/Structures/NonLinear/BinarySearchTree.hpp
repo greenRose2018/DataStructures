@@ -410,6 +410,28 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
         this->root = removeMe;
     }
 }
+
+template <class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
+{
+    BinaryTreeNode<Type> * currentNode = current;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getRightNode();
+    }
+    return currentNode;
+}
+
+template <class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * current)
+{
+    BinaryTreeNode<Type> * currentNode = current;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getLeftNode();
+    }
+    return currentNode;
+}
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRoot()
 {
@@ -440,16 +462,4 @@ Type BinarySearchTree<Type> :: findMaximum()
     
 }
 
-
-template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * current)
-{
-    
-}
-
-template <class Type>
-BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * current)
-{
-    
-}
 #endif /* BinarySearchTree_hpp */
