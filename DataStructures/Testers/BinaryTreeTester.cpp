@@ -34,14 +34,23 @@ void BinaryTreeTester:: doTreeStuff()
     testTree.insert(23);
     testTree.insert(954);
     
-    cout<< "preorder" << endl;
-    testTree.preOrderTraversal();
+//    cout<< "preorder" << endl;
+//    testTree.preOrderTraversal();
+//
+//    cout << "inorder" << endl;
+//    testTree.inOrderTraversal();
+//
+//    cout << "postorder"<< endl;
+//    testTree.postOrderTraversal();
     
-    cout << "inorder" << endl;
-    testTree.inOrderTraversal();
+    cout << "Height" << endl;
+    cout << testTree.getHeight() << endl;
     
-    cout << "postorder"<< endl;
-    testTree.postOrderTraversal();
+    cout << "is it Balanced" << endl;
+    cout << testTree.isBalanced() << endl;
+    
+    cout << "is it completed" << endl;
+    cout << testTree.isComplete() << endl;
     
     
 }
