@@ -202,7 +202,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 }
 
 template<class Type>
-void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited) // goes depth wise depth
 {
     std::set<int>connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setIterator;
@@ -220,7 +220,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
 }
 
 template< class Type>
-void Graph<Type>:: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
+void Graph<Type>:: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex) // goes wide wise first
 {
     assert(vertex < currentGraph.size());
     bool visited[MAXIMUM];
