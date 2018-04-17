@@ -128,11 +128,6 @@ BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree(BinaryTreeNode<Type> * pa
     return parent;
 }
 
-template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type value)
-{
-    
-}
 
 template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent, Type value)
@@ -185,7 +180,27 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
 template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type value)
 {
-    
+    if(parent == nullptr)
+    {
+        parent = new BinaryTreeNode<Type>(value);
+    }
+    else if(inserted < parent0>getNodeData())
+    {
+        parent->setLeftchild(insertNode(parent->getLeftNode(), value));
+        parent = balanceSubTree(parent);
+    }
+    else if(inserted > parent->getNodeData())
+    {
+        parent->setRightChild(insertNode(parent->getRightNode(), value));
+        parent = balancSubTree(parent);
+    }
+    return parent;
+}
+
+template <class Type>
+void AVLTree<Type> :: insert(Type itemToInsert)
+{
+    insertNode(this->getRoot(), itemToInsert);
 }
 
 template <class Type>
