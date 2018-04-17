@@ -33,4 +33,62 @@ public:
     void  insert(Type itemToInsert);
     void remove(Type value);
 };
+template <class Type>
+AVLTree<Type> :: ABLTree()
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * leftRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * rightRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * leftRightRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * rightLeftRotation(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * balanceSubTree(BinaryTreeNode<Type> * parent)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * insertNode(BinaryTreeNode<Type> * parent, Type value)
+{
+    
+}
+template <class Type>
+AVLTree<Type> :: BinaryTreeNode<Type> * removeNode(BinaryTreeNode<Type> * parent, Type value)
+{
+    
+}
+template <class Type>
+AVLTree<Type> :: insert(Type itemToInsert)
+{
+    
+}
+
+template <class Type>
+AVLTree<Type> :: remove(Type value)
+{
+    
+}
+
 #endif /* AVLTree_hpp */
