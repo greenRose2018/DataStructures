@@ -30,7 +30,7 @@ private:
 public:
     ABLTree();
     
-    void  insert(Type itemToInsert);
+    void insert(Type itemToInsert);
     void remove(Type value);
 };
 
@@ -64,7 +64,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * leftRotation(Bina
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * rightRotation(BinaryTreeNode<Type> * parent)
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation(BinaryTreeNode<Type> * parent)
 {
     BinaryTreeNode<Type> * changedNode;
     changedNode = parent->getLeftNode;
@@ -77,31 +77,31 @@ BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * rightRotation(Bin
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * leftRightRotation(BinaryTreeNode<Type> * parent)
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation(BinaryTreeNode<Type> * parent)
 {
     
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * rightLeftRotation(BinaryTreeNode<Type> * parent)
+BinaryTreeNode<Type> * AVLTree<Type> :: rightLeftRotation(BinaryTreeNode<Type> * parent)
 {
     
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * balanceSubTree(BinaryTreeNode<Type> * parent)
+BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree(BinaryTreeNode<Type> * parent)
 {
     
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * insertNode(BinaryTreeNode<Type> * parent, Type value)
+BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type value)
 {
     
 }
 
 template <class Type>
-BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * removeNode(BinaryTreeNode<Type> * parent, Type value)
+BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent, Type value)
 {
     
 }
