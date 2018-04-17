@@ -183,7 +183,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
 }
 
 template <class Type>
-AVLTree<Type> :: insert(Type itemToInsert)
+BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent, Type value)
 {
     
 }
@@ -191,7 +191,7 @@ AVLTree<Type> :: insert(Type itemToInsert)
 template <class Type>
 AVLTree<Type> :: remove(Type value)
 {
-    
+    removeNode(this->getRoot(), value);
 }
 
 #endif /* AVLTree_hpp */
