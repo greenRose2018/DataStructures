@@ -25,7 +25,7 @@ private:
     BinaryTreeNode<Type> * insertNode(BinaryTreeNode<Type> * parent, Type value);
     BinaryTreeNode<Type> * removeNode(BinaryTreeNode<Type> * parent, Type value);
     
-    int heightdifference(BinaryTreeNode<Type>* parent);
+    int heightDifference(BinaryTreeNode<Type>* parent);
     
 public:
     ABLTree();
@@ -33,6 +33,7 @@ public:
     void  insert(Type itemToInsert);
     void remove(Type value);
 };
+
 template <class Type>
 AVLTree<Type> :: ABLTree()
 {
