@@ -35,6 +35,16 @@ public:
 };
 
 template <class Type>
+AVLTree<Type> :: heightDifference(BinaryTreeNode<Type>* parent)
+{
+    int balance;
+    int leftHeight = this->calculateHeight(parent->getLeftNode());
+    int rightHeight = this->calculateHeight(parent->getRightNode());
+    balance = leftHeight - rightHeight;
+    return balance;
+}
+
+template <class Type>
 AVLTree<Type> :: ABLTree()
 {
     
@@ -75,11 +85,13 @@ AVLTree<Type> :: BinaryTreeNode<Type> * insertNode(BinaryTreeNode<Type> * parent
 {
     
 }
+
 template <class Type>
 AVLTree<Type> :: BinaryTreeNode<Type> * removeNode(BinaryTreeNode<Type> * parent, Type value)
 {
     
 }
+
 template <class Type>
 AVLTree<Type> :: insert(Type itemToInsert)
 {
