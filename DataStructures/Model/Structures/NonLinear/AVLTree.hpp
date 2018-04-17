@@ -53,13 +53,27 @@ AVLTree<Type> :: ABLTree()
 template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * leftRotation(BinaryTreeNode<Type> * parent)
 {
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getLeftNode;
     
+    parent->setLeftChild(changedNode->getRightNode());
+    
+    changedNode->setRightChild(parent);
+    
+    return changedNode;
 }
 
 template <class Type>
 BinaryTreeNode<Type> * AVLTree<Type> :: BinaryTreeNode<Type> * rightRotation(BinaryTreeNode<Type> * parent)
 {
+    BinaryTreeNode<Type> * changedNode;
+    changedNode = parent->getLeftNode;
     
+    parent->setLeftChild(changedNode->getRightNode());
+    
+    changedNode->setRightChild(parent);
+    
+    return changedNode;
 }
 
 template <class Type>
