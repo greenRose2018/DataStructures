@@ -24,10 +24,12 @@ private:
     bool isPrime(long current);
     void resize();
     long findPosition(HashNode<Type>* insertedNode);
+    long handleCollision(HashNode<Type>* insertedNode, long index);
 public:
     Hashtable();
     ~Hashtable();
     void insert(Type data);
+    long getSize();
     
 };
 
@@ -76,4 +78,17 @@ long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
     
 }
+
+template<class Type>
+long Hashtable<Type> :: handleCollisioin(HashNode<Type> * current, long index)
+{
+    return -1;
+}
+
+template<class Type>
+long Hashtable<Type> :: getSize()
+{
+    return -1;
+}
+
 #endif /* Hashtable_h */
