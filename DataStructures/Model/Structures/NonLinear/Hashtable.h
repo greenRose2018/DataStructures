@@ -53,4 +53,9 @@ void Hashtable<Type> :: resize()
     
 }
 
+template <class Type>
+void Hashtable<Type> :: insert(Type value)
+{
+    
+}
 #endif /* Hashtable_h */
