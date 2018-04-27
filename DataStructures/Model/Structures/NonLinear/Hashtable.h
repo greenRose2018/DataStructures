@@ -22,10 +22,12 @@ private:
     long getNextPrime();
     bool isPrime(long current);
     void resize();
+    long findPosition(HashNode<Type>* insertedNode);
 public:
     Hashtable();
     ~Hashtable();
     void insert(Type data);
+    
 };
 
 template<class Type>
@@ -63,6 +65,12 @@ void Hashtable<Type> :: resize()
 
 template <class Type>
 void Hashtable<Type> :: insert(Type value)
+{
+    
+}
+
+template<class Type>
+long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
     
 }
