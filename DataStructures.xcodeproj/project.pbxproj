@@ -65,6 +65,7 @@
 		B6A59DEF204716DC004488A4 /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
 		B6B590F720600249006B5E54 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		B6B614412093735D00463823 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		B6B614442093765800463823 /* Hashtable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashtable.h; sourceTree = "<group>"; };
 		B6CED6AF206D2961005149C3 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		B6D484B82045ABD200AA51B7 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		B6D484BB2045ABDE00AA51B7 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 				B632F662206A9F2D00656592 /* Tree.hpp */,
 				B6CED6AF206D2961005149C3 /* BinarySearchTree.hpp */,
 				B60A06CB20863A9C003AEFC5 /* AVLTree.hpp */,
+				B6B614442093765800463823 /* Hashtable.h */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
