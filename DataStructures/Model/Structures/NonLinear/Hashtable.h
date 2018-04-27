@@ -17,6 +17,7 @@ class Hashtable
 private:
     HashNode<Type> ** internalStorage;
     long size;
+    long capacity;
     double loadFactor;
     
     long getNextPrime();
@@ -33,6 +34,7 @@ public:
 template<class Type>
 HashTable<Type> :: Hashtable()
 {
+    capacity =101;
     internalStorage = new HashNode<Type>*[101];
     size = 0;
     loadFactor = .80;
