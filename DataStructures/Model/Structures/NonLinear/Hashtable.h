@@ -36,7 +36,7 @@ public:
 template<class Type>
 HashTable<Type> :: Hashtable()
 {
-    capacity =101;
+    capacity = 101;
     internalStorage = new HashNode<Type>*[101];
     size = 0;
     loadFactor = .80;
@@ -90,13 +90,60 @@ bool Hashtable<Type> :: isPrime(long current)
 template<class Type>
 void Hashtable<Type> :: resize()
 {
+    long updatedCapacity = nextPrime();
+    HashNode<Type> ** tempStorage = new HashNode<Type> * [updatedCapacity];
     
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
+    
+    long oldCapacity = this->capacity;
+    this>capcity - updatedCapcity;
+    
+    for(long index = 0; index < oldCapacity; index++)
+    {
+        if(hashTableStorage[index] != nullptr)
+        {
+             HashNode<Type> * temp = internalStorage[index];
+            long position = findPosition(temp);
+            if(tempStorage[position] == nullptr)
+            {
+                tempStorage[position] = temp;
+            }
+            else
+            {
+                long updatedPosition = handleCollision(temp, position);
+                if(updatedPosition != -1)
+                {
+                    tempStorage[updatedPosition] = temp;
+                }
+            }
+        }
+    }
 }
 
 template <class Type>
 void Hashtable<Type> :: insert(Type value)
 {
+    this->size++;
+    if(((this->size *1.000) / this->capacity) > this->loadFactor)
+    {
+        resize();
+    }
     
+    HashNode<Type * temp = new HashNOde<Type>(value);
+    long index = findPosition(temp);
+    
+    if(tempStorage[position] == nullptr)
+    {
+        tempStorage[position] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(temp, index);
+        if(updatedPosition != -1)
+        {
+            tempStorage[updatedPosition] = temp;
+        }
+    }
 }
 
 template<class Type>
@@ -107,15 +154,28 @@ long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 }
 
 template<class Type>
-long Hashtable<Type> :: handleCollisioin(HashNode<Type> * current, long index)
+long Hashtable<Type> :: handleCollisioin(long currentPosition)
 {
+    long shift = 17;
+    for ( long position = currentPosition + shift; position != currentPosition; position += shift)
+    {
+        if(position >= capacity)
+        {
+            position = position % capacity;
+        }
+        
+        if(internalStorage[position] == nullptr)
+        {
+            return position;
+        }
+    }
     return -1;
 }
 
 template<class Type>
 long Hashtable<Type> :: getSize()
 {
-    return -1;
+    return this->size;
 }
 
 #endif /* Hashtable_h */
