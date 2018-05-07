@@ -182,4 +182,26 @@ long Hashtable<Type> :: getSize()
     return this->size;
 }
 
+template<class Type>
+HashNode<Type> * Hashtable<Type> :: get(long index)
+{
+    assert(index < capacity);
+    return internalStorage[index];
+}
+    
+template<class Type>
+bool Hashtable<type> :: contains(HashNode<Type> *value)
+{
+    if(internalStorage[findPosition(value)]->getData() == value->getData())
+    {
+       return true;
+    }
+    
+    long other = handleCollision(findPosition(value));
+    if(internalStorage[other]->getData() == value->getData())
+    {
+        return true;
+    }
+    return false;
+}
 #endif /* Hashtable_h */
