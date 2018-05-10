@@ -11,7 +11,8 @@
 void GraphTester :: testGraphs()
 {
     setup();
-    compareTraversals();
+    //compareTraversals();
+    findCheapestTraversal();
     
 }
 
@@ -127,5 +128,16 @@ void GraphTester:: compareTraversals()
 
 void GraphTester :: findCheapestTraversal()
 {
+    cout << "max " << puzzle.costTraversal(puzzle, 4) << endl;
+    puzzle.breadthFirstTraversal(puzzle, 4);
     
+    cout <<"min " << puzzle.costTraversal(puzzle, 16) << endl;
+    puzzle.breadthFirstTraversal(puzzle, 16);
+    
+    
+//    for( int i = 0; i < puzzle.size(); i++)
+//    {
+//        cout << i << ". " << puzzle.costTraversal(puzzle, i) << endl;
+//        puzzle.breadthFirstTraversal(puzzle, i);
+//    }
 }
