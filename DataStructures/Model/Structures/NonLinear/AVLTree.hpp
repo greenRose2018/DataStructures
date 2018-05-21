@@ -138,7 +138,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
     }
     if(value < parent->getNodeData())
     {
-        parent->setLeftchild(removeNode(parent->getLeftNode(),  value));
+        parent->setLeftChild(removeNode(parent->getLeftNode(),  value));
     }
     else if(value > parent->getNodeData())
     {
@@ -186,13 +186,13 @@ BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent
     }
     else if(value < parent->getNodeData())
     {
-        parent->setLeftchild(insertNode(parent->getLeftNode(), value));
+        parent->setLeftChild(insertNode(parent->getLeftNode(), value));
         parent = balanceSubTree(parent);
     }
     else if(value > parent->getNodeData())
     {
         parent->setRightChild(insertNode(parent->getRightNode(), value));
-        parent = balancSubTree(parent);
+        parent = balanceSubTree(parent);
     }
     return parent;
 }
