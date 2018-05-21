@@ -12,6 +12,7 @@
 #include "../Data/CrimeData.hpp"
 #include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Testers/LinkedListTester.hpp"
+#include "../Model/Structures/NonLinear/AVLTree.hpp"
 #include <string>
 #include <fstream>
 #include <iostream>

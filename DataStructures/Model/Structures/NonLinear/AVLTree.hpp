@@ -28,14 +28,14 @@ private:
     int heightDifference(BinaryTreeNode<Type>* parent);
     
 public:
-    ABLTree();
+    AVLTree();
     
     void insert(Type itemToInsert);
     void remove(Type value);
 };
 
 template <class Type>
-AVLTree<Type> :: heightDifference(BinaryTreeNode<Type>* parent)
+int AVLTree<Type> :: heightDifference(BinaryTreeNode<Type>* parent)
 {
     int balance;
     int leftHeight = this->calculateHeight(parent->getLeftNode());
@@ -45,7 +45,7 @@ AVLTree<Type> :: heightDifference(BinaryTreeNode<Type>* parent)
 }
 
 template <class Type>
-AVLTree<Type> :: ABLTree()
+AVLTree<Type> :: AVLTree()
 {
     
 }
@@ -136,13 +136,13 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
     {
         return parent;
     }
-    if(inserted < parent->getNodeData())
+    if(value < parent->getNodeData())
     {
-        parent->setLeftchild(removeNode(parent->getLeftNode(),  inserted));
+        parent->setLeftchild(removeNode(parent->getLeftNode(),  value));
     }
-    else if(inserted > parent-getNodeData())
+    else if(value > parent->getNodeData())
     {
-        parent->setRightChild(removeNode(parent->getRightNode(), inserted));
+        parent->setRightChild(removeNode(parent->getRightNode(), value));
     }
     else
     {
@@ -184,12 +184,12 @@ BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent
     {
         parent = new BinaryTreeNode<Type>(value);
     }
-    else if(inserted < parent0>getNodeData())
+    else if(value < parent->getNodeData())
     {
         parent->setLeftchild(insertNode(parent->getLeftNode(), value));
         parent = balanceSubTree(parent);
     }
-    else if(inserted > parent->getNodeData())
+    else if(value > parent->getNodeData())
     {
         parent->setRightChild(insertNode(parent->getRightNode(), value));
         parent = balancSubTree(parent);
@@ -204,7 +204,7 @@ void AVLTree<Type> :: insert(Type itemToInsert)
 }
 
 template <class Type>
-AVLTree<Type> :: remove(Type value)
+void AVLTree<Type> :: remove(Type value)
 {
     removeNode(this->getRoot(), value);
 }
