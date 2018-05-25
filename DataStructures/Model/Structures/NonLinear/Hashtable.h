@@ -133,7 +133,7 @@ void Hashtable<Type> :: insert(Type value)
         resize();
     }
     
-    HashNode<Type * temp = new HashNOde<Type>(value);
+    HashNode<Type * temp = new HashNode<Type>(value);
     long index = findPosition(temp);
     
     if(tempStorage[position] == nullptr)
